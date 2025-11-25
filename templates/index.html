@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Delivery Time Prediction</h1>
+
+    <a href="/predict">Single Prediction</a><br><br>
+    <a href="/batch">Batch Prediction</a><br><br>
+    <a href="/train">Train Model</a><br><br>
+
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>

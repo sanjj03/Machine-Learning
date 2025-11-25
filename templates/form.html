@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Single Prediction</title>
+</head>
+<body>
+    <h2>Enter Details</h2>
+
+    <form action="/predict" method="POST">
+
+        <label>Delivery Person Age</label>
+        <input name="Delivery_person_Age" required><br><br>
+
+        <label>Delivery Person Ratings</label>
+        <input name="Delivery_person_Ratings" required><br><br>
+
+        <label>Weather Conditions</label>
+        <input name="Weather_conditions" required><br><br>
+
+        <label>Road Traffic Density</label>
+        <input name="Road_traffic_density" required><br><br>
+
+        <label>Vehicle Condition</label>
+        <input name="Vehicle_conditon" required><br><br>
+
+        <label>Multiple Deliveries</label>
+        <input name="multiple_deliveries" required><br><br>
+
+        <label>Distance</label>
+        <input name="distance" required><br><br>
+
+        <label>Type of Order</label>
+        <input name="Type_of_order" required><br><br>
+
+        <label>Type of Vehicle</label>
+        <input name="Type_of_vehicle" required><br><br>
+
+        <label>Festival</label>
+        <input name="Festival" required><br><br>
+
+        <label>City</label>
+        <input name="City" required><br><br>
+
+        <input type="submit" value="Predict">
+
+    </form>
+
+    {% if final_result %}
+        <h3>Predicted Time: {{ final_result }}</h3>
+    {% endif %}
+
+</body>
+</html>
