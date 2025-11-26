@@ -1,11 +1,11 @@
-# Machine-Learning
+# Machine Learning Project
 
-1. Create new Enviroment
-conda create -p env python=3.9 -y
+This repository contains an end-to-end Machine Learning pipeline including:
 
-2. Activate your environment
-CMD = conda activate env/
-Git bash = source activate env/
-
-3. Install your requirements file
-pip install -r requirements.txt 
+- Data ingestion  
+- Data cleaning and preprocessing  
+- Feature engineering  
+- Model training  
+- Model evaluation  
+- Prediction pipeline  
+- Flask API for model prediction  
